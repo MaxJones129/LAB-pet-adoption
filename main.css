@@ -1,0 +1,41 @@
+/* .body {
+  background-color: lightgrey !important;
+} */
+
+
+
+#app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 500px;
+  row-gap: 50px;
+}
+
+
+.card-title {
+  display: flex;
+  justify-content: center;
+}
+
+/* .card-text {
+  display: flex;
+  justify-content: center;
+}  */
+
+.card-body1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+} 
+
+.card-body2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+} 
+
+.card-body3 {
+  display: flex;
+  justify-content: center;
+} 
