@@ -42,3 +42,25 @@
   display: flex;
   justify-content: center;
 } 
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 7%;
+}
+
+/* #dog {
+  padding-right: 50px;
+}
+
+#cat {
+  padding-right: 50px;
+}
+
+#dino {
+  
+} */
+
+body {
+  background-color: lightgray;
+}
