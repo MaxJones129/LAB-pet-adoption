@@ -321,13 +321,8 @@ const pets = [
   // 1. Get all the cards to render on the DOM
   cardsOnDom(pets);
   
-  // 2. Get only the teammates whose favorite color is blue on the DOM
   
-  // ******************** //
-  // ****** EVENTS ****** //
-  // ******************** //
-  
-  // 1. Target both of the buttons on the DOM
+  // 1. Target the buttons on the DOM
   const showCatsButton = document.querySelector("#cat");
   const showDogsButton = document.querySelector("#dog");
   const showDinosButton = document.querySelector("#dino");
