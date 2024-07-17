@@ -13,7 +13,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Just picks the tomatoes off of a sandwich instead of requesting a whole new sandwich.",
       type: "dino",
-      imageUrl: "http://www.jozilife.co.za/wp-content/uploads/The-Dino-Expo.jpg",
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQHSm6vblInu8urEOUi7n7qaLIgyWh4UORzw&s",
     },
     {
       id: 3,
@@ -61,7 +61,7 @@ const pets = [
       color: "Grey",
       specialSkill: "Comfortable in the outdoors for up to eight hours.",
       type: "dino",
-      imageUrl: "http://www.theouthousers.com/images/jck//ThanosCopter/news/grumpasaur.jpg"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNhYhzz4ibGVPwKfvBYt00D3fL1doxejxGWA&s"
     },
     {
       id: 9,
@@ -85,7 +85,7 @@ const pets = [
       color: "Orange",
       specialSkill: "Can be around food without staring creepily at it.",
       type: "dino",
-      imageUrl: "http://www.cantref.com/userfiles/events/walking%20dino.jpg?w=600"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN95uz6T5jYbka6Q_fl7Vkgz2qffi9EJ9utw&s"
     },
     {
       id: 12,
@@ -101,7 +101,7 @@ const pets = [
       color: "Red",
       specialSkill: "Expertly quotes and recognizes dialogue from early seasons of The Simpsons.",
       type: "dog",
-      imageUrl: "http://1kjkdg1axrkd2g03cnboj761.wpengine.netdna-cdn.com/wp-content/uploads/2017/12/braydon-anderson-105552-e1512684107659.jpg"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKZwGiq1_kbstnb4UkU_yQcScpL5cgx6pfbA&s"
     },
     {
       id: 14,
@@ -125,7 +125,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Drives at a safe rate of speed in snow or rain.",
       type: "dino",
-      imageUrl: "https://images.readwrite.com/wp-content/uploads/2018/03/t-rex-dino-quiz-e1490854556549.jpg"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3lnyW3HNqNc-NK9W0U4wC4-86LJlwI6xOnQ&s"
     },
     {
      id: 17,
@@ -133,7 +133,7 @@ const pets = [
       color: "Yellow",
       specialSkill: "Does not freak out if you haven’t seen his favorite movie (The Big Lebowski).",
       type: "cat",
-      imageUrl: "http://www.funnycatsite.com/pictures/Close_Up_Yawn.jpg"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB3rBDfVpYqUcp0tvqbjuTrCeWLwBkcS0PUg&s"
     },
     {
       id: 18,
@@ -141,7 +141,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Proficient in air guitar",
       type: "dino",
-      imageUrl: "https://www.nation.co.ke/image/view/-/4078922/highRes/1742693/-/maxw/600/-/1453yvh/-/DINO.jpg"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxuaRVJ3quK95G_zPjJK_owzNqO9m4LXkPQ&s"
     },
     {
       id: 19,
@@ -149,7 +149,7 @@ const pets = [
       color: "Blue",
       specialSkill: "Listens attentively to boring stories.",
       type: "dog",
-      imageUrl: "http://dailynewsdig.com/wp-content/uploads/2014/03/Creative-And-Funny-Dog-Stock-Photography-Pictures-2.jpg"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQssJoERRruFweV0yUORpfpRGtLdvHUBwMAbA&s"
     },
     {
       id: 20,
@@ -157,7 +157,7 @@ const pets = [
       color: "Black",
       specialSkill: "Uses litter box at appropriate hours.",
       type: "cat",
-      imageUrl: "http://www.funnycatsite.com/pictures/Lazy_White_Cat.jpg"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9ZusasdiY0Jups_USql2LsPc_fABra6u6kg&s"
     },
     {
       id: 21,
@@ -165,7 +165,7 @@ const pets = [
       color: "Red",
       specialSkill: "Owns a Nintendo Power Glove.",
       type: "dino",
-      imageUrl: "https://img.buzzfeed.com/buzzfeed-static/static/2015-11/2/12/enhanced/webdr15/anigif_enhanced-29802-1446485228-10.gif?crop=250:165;0,0&downsize=715"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv8bUCNm-yOXYiRDX-s8GMZVcnfospIyrfDA&s"
     },
     {
         id: 22,
@@ -173,7 +173,7 @@ const pets = [
       color: "Orange",
       specialSkill: "Is comfortable with jokes about his receding hairline.",
       type: "cat",
-      imageUrl: "http://funnyanimalphoto.com/wp-content/uploads/2013/08/cat_caught_mouse_thegatewaypundit.jpg"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2cVNYzI_5e3BY73zcfVFTVRnMp9Wt67_jBg&s"
     },
     {
         id: 23,
@@ -189,7 +189,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Participates in karaoke but does not force others to go out to karaoke.",
       type: "dog",
-      imageUrl: "http://www.dogbreedplus.com/dog_breeds/images/basset-hound-4.jpg"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVja4wi9MUv4RWRpTb2mFJ-SSgJCQbii8hdg&s"
     },
     {
       id: 25,
@@ -197,7 +197,7 @@ const pets = [
       color: "Red",
       specialSkill: "Knows the words to 4 rap songs.",
       type: "cat",
-      imageUrl: "http://funbk.s3.amazonaws.com/wp-content/uploads/2016/06/funny-cat-video-which-will-make-you-laugh-louder.jpg"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoydR_NW4es4l_AvpthZxzGZw39nuMF53KMA&s"
     },
     {
         id: 26,
@@ -237,23 +237,120 @@ const pets = [
       color: "Red",
       specialSkill: "Doesn’t get weirded out by the word “moist.”",
       type: "dino",
-      imageUrl: "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFuDAqMbCksz4DmYS-o9BWDDrbLzdqsHyUOw&s"
     }
   ];
 
-  const targetingApp = document.querySelector("#app");
+  // const targetingApp = document.querySelector("#app");
 
-  let domString = "";
-  for (const pet of pets) {
-    domString += `<div class="card" style="width: 18rem;">
+  // let domString = "";
+  // for (const pet of pets) {
+  //   domString += `<div class="card" style="width: 18rem;">
+  //     <h5 class="card-title">${pet.name}</h5>
+  //       <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
+  //       <div class="card-body1">
+  //         <p class="card-text1">${pet.color}</p>
+  //       </div>
+  //       <div class="card-body2">
+  //         <p class="card-text2">${pet.specialSkill}</p>
+  //       </div>
+  //       <div class="card-body3" id="cardBody3">
+  //         <p class="card-text3">${pet.type}</p>
+  //       </div>
+  //     </div>`;
+  //     renderToDom("#app", domString);
+  // };
+
+  // targetingApp.innerHTML = domString;
+
+  // function catType() {
+  //   if (pets.type === "cat") {
+  //     document.getElementById("card-body3").style.backgroundColor = "lightblue";
+  //     document.querySelector("#cardBody3").style.backgroundColor = "lightblue" ;
+  //   }
+  // }
+
+  // catType();
+
+  const renderToDom = (divId, htmlToRender) => {
+    const selectedDiv = document.querySelector(divId);
+    selectedDiv.innerHTML = htmlToRender;
+  };
+  
+  // get the cards on the DOM
+  const cardsOnDom = (array) => {
+    let domString = "";
+    for (const pet of array) {
+      domString += `<div class="card" style="width: 18rem;">
+      <h5 class="card-title">${pet.name}</h5>
         <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
-        <div class="card-body">
-          <h5 class="card-title">${pet.name}</h5>
-          <p class="card-text">${pet.color}</p>
-          <p class="card-text">${pet.specialSkill}</p>
-          <p class="card-text">${pet.type}</p>
+        <div class="card-body1">
+          <p class="card-text1">${pet.color}</p>
+        </div>
+        <div class="card-body2">
+          <p class="card-text2">${pet.specialSkill}</p>
+        </div>
+        <div class="card-body3">
+          <p class="card-text3">${pet.type}</p>
         </div>
       </div>`;
+    }
+  
+    renderToDom("#app", domString);
   };
+  
+  // function to filter teammates with specific favorite color
+  const filter = (array, typeString) => {
+    const petArray = [];
+  
+    // array.forEach((item) => {
+    //   if (item.type === typeString) {
+    //     petArray.push(item);
+    //   }
+    // });
+  
+    for (const pet of array) {
+      if (pet.type === typeString) {
+        petArray.push(pet);
+      }
+    }
+  
+    return petArray;
+  };
+  
+  // 1. Get all the cards to render on the DOM
+  cardsOnDom(pets);
+  
+  // 2. Get only the teammates whose favorite color is blue on the DOM
+  
+  // ******************** //
+  // ****** EVENTS ****** //
+  // ******************** //
+  
+  // 1. Target both of the buttons on the DOM
+  const showCatsButton = document.querySelector("#cat");
+  const showDogsButton = document.querySelector("#dog");
+  const showDinosButton = document.querySelector("#dino");
+  const showAllButton = document.querySelector("#resetbtn");
+  
+  // 2. Add click event to show all the instuctors on button click using the function we created above
+  showAllButton.addEventListener("click", () => {
+    cardsOnDom(pets);
+  });
+  
+  // 3. Add click event to filter all the instructors whose favorite color is blue on button click
+  showCatsButton.addEventListener("click", () => {
+    const catPets = filter(pets, "cat");
+    cardsOnDom(catPets);
+  });
+  
+  showDogsButton.addEventListener("click", () => {
+    const dogPets = filter(pets, "dog");
+    cardsOnDom(dogPets);
+  });
 
-  targetingApp.innerHTML = domString;
+  showDinosButton.addEventListener("click", () => {
+    const dinoPets = filter(pets, "dino");
+    cardsOnDom(dinoPets);
+  });
+  
