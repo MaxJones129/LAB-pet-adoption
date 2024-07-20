@@ -14,15 +14,42 @@
     <button class="btn btn-primary" id="dino">Dinos</button>
     <button class="btn btn-primary" id="resetbtn">All Pets</button>
   </div>
+  <form>
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="name" placeholder="Name" required>
+      <label for="floatingInput">Pet Name</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="url" class="form-control" id="image" placeholder="image" required>
+      <label for="floatingInput">Pet Image</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="favoriteColor" placeholder="favoriteColor" required>
+      <label for="floatingInput">Favorite Color</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="specialSkill" placeholder="Skill" required>
+      <label for="floatingInput">Special Skill</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="petType" placeholder="petType" required>
+      <label for="floatingInput">Pet Type</label>
+    </div>
+    <button type="submit" class="btn btn-success" id="form-submit">Add Teammate</button>
+  </form>
   <div id="app"></div>
-  <!-- <script>
-  function catType() {
-    if (pets.type === "cat") {
-      document.card-body3.style.backgroundColor = "lightblue";
-    }
-  }
-  </script> -->
-  <script src="main.js"></script>
+
+  <!-- <div id="color">
+    <script>
+      document.getElementById("cardBody3").style.backgroundColor = "lightblue";
+    </script>
+  </div> -->
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 </body>
 </html>
