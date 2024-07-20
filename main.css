@@ -1,18 +1,34 @@
 /* .body {
   background-color: lightgrey !important;
 } */
+.card {
+  display: flex;
+  text-align: center;
+}
+/* .card {
+  display: flex;
+  text-align: center;
+} */
 
+/* #app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 50px;
+  column-gap: 20px;
+} */
 
 
 #app {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding-bottom: 500px;
-  padding-left: 500px;
-  padding-right: 500px;
+  justify-content: space-evenly;
+  padding-bottom: 400px;
+  padding-left: 400px;
+  padding-right: 400px;
   padding-top: 50px;
   row-gap: 50px;
+  column-gap: 20px;
 }
 
 
@@ -51,6 +67,7 @@
   display: flex;
   justify-content: center;
   gap: 7%;
+  padding-top: 50px;
 }
 
 #dog {
@@ -76,3 +93,18 @@ body {
   justify-content: center;
   align-content: center;
 }
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.form-floating {
+  width: 600px;
+}
+
+/* #form-submit {
+  padding-top: 50px;
+} */
