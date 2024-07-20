@@ -3,7 +3,7 @@ const pets = [
       id: 1,
       name: "Dusty",
       color: "Green",
-      specialSkill: "Gives sincere apologies.",
+      specialSkill: "Gives sincere apologies. Like wayyy too much.",
       type: "cat",
       imageUrl: "http://kittentoob.com/wp-content/uploads/2015/06/funny-cat-with-a-towel.jpg",
     },
@@ -11,7 +11,7 @@ const pets = [
         id: 2,
       name: "Trouble",
       color: "Brown",
-      specialSkill: "Just picks the tomatoes off of a sandwich instead of requesting a whole new sandwich.",
+      specialSkill: "Just picks the tomatoes off of a sandwich.",
       type: "dino",
       imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQHSm6vblInu8urEOUi7n7qaLIgyWh4UORzw&s",
     },
@@ -27,7 +27,7 @@ const pets = [
       id: 4,
       name: "Coco",
       color: "Black",
-      specialSkill: "Burps minimally.",
+      specialSkill: "Burps minimally, Barks the opposite amount.",
       type: "dog",
       imageUrl: "http://cdn.akc.org/content/article-body-image/funny-pembroke_welsh_corgi.jpg"
     },
@@ -75,7 +75,7 @@ const pets = [
       id: 10,
       name: "Sammy",
       color: "Blue",
-      specialSkill: "Listens attentively to boring stories.",
+      specialSkill: "Listens attentively to boring stories from all.",
       type: "cat",
       imageUrl: "https://i.pinimg.com/originals/04/54/92/0454926d39eeb420f4f01948e94e9e41.jpg"
     },
@@ -91,7 +91,7 @@ const pets = [
       id: 12,
       name: "Buster",
       color: "Green",
-      specialSkill: "Does not use excessive acronyms.",
+      specialSkill: "Does not use excessive acronyms at any time.",
       type: "dog",
       imageUrl: "https://i.pinimg.com/originals/1f/30/8c/1f308c9c108a384b91b39430cc7312e9.jpg"
     },
@@ -107,7 +107,7 @@ const pets = [
       id: 14,
       name: "Samantha",
       color: "Brown",
-      specialSkill: "Always up for dessert.",
+      specialSkill: "Always up for dessert. Anytime. Anyplace.",
       type: "cat",
       imageUrl: "http://3.bp.blogspot.com/-RzIFLsIO-XQ/UFoMLOT66JI/AAAAAAAAVps/JRF98hdA9S8/s640/funny-cat-pictures-016-027.jpg"
     },
@@ -115,7 +115,7 @@ const pets = [
       id: 15,
       name: "Coco",
       color: "Red",
-      specialSkill: "Burps minimally.",
+      specialSkill: "This is the most adorable cat every and yeah.",
       type: "cat",
       imageUrl: "http://cathumor.net/wp-content/uploads/2013/12/cat-humor-funny-karate-cat-2.jpg"
     },
@@ -139,7 +139,7 @@ const pets = [
       id: 18,
       name: "Salem",
       color: "Brown",
-      specialSkill: "Proficient in air guitar",
+      specialSkill: "Proficient in air guitar but terrible with a real one.",
       type: "dino",
       imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxuaRVJ3quK95G_zPjJK_owzNqO9m4LXkPQ&s"
     },
@@ -147,7 +147,7 @@ const pets = [
       id: 19,
       name: "Callie",
       color: "Blue",
-      specialSkill: "Listens attentively to boring stories.",
+      specialSkill: "Listens attentively to boring stories from all.",
       type: "dog",
       imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQssJoERRruFweV0yUORpfpRGtLdvHUBwMAbA&s"
     },
@@ -155,7 +155,7 @@ const pets = [
       id: 20,
       name: "Spooky",
       color: "Black",
-      specialSkill: "Uses litter box at appropriate hours.",
+      specialSkill: "Uses litter box at appropriate hours only on Thursdays.",
       type: "cat",
       imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9ZusasdiY0Jups_USql2LsPc_fABra6u6kg&s"
     },
@@ -163,7 +163,7 @@ const pets = [
       id: 21,
       name: "Miss kitty",
       color: "Red",
-      specialSkill: "Owns a Nintendo Power Glove.",
+      specialSkill: "Owns a Nintendo Power Glove and a Gameboy.",
       type: "dino",
       imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv8bUCNm-yOXYiRDX-s8GMZVcnfospIyrfDA&s"
     },
@@ -179,7 +179,7 @@ const pets = [
         id: 23,
       name: "Buddy",
       color: "Red",
-      specialSkill: "Enjoys fine wine.",
+      specialSkill: "Enjoys fine wine with a bunch of smelly cheese.",
       type: "dog",
       imageUrl: "http://1.bp.blogspot.com/-VjM0CmtN-vU/T7YX-LXa09I/AAAAAAAADA0/Vt1oGWEG0lw/s1600/sheepdog+border+collie+shakes+off+water+funny+picture+photo+pulling+faces+raspberry+tongue.jpg"
     },
@@ -195,7 +195,7 @@ const pets = [
       id: 25,
       name: "Salem",
       color: "Red",
-      specialSkill: "Knows the words to 4 rap songs.",
+      specialSkill: "Knows the words to 4 rap songs. Soon to be 5.",
       type: "cat",
       imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoydR_NW4es4l_AvpthZxzGZw39nuMF53KMA&s"
     },
@@ -203,7 +203,7 @@ const pets = [
         id: 26,
       name: "Bubba",
       color: "Yellow",
-      specialSkill: "Cleans himself.",
+      specialSkill: "Cleans himself like a really weird amount in public.",
       type: "dog",
       imageUrl: "https://www.thetrendywhippet.co.uk/wp-content/uploads/2016/11/IMG_1651-600x400.jpg"
     },
@@ -211,7 +211,7 @@ const pets = [
         id: 27,
       name: "Chloe",
       color: "Green",
-      specialSkill: "Admits he is wrong",
+      specialSkill: "Admits he is wrong until he is actually wrong.",
       type: "dino",
       imageUrl: "https://assets.creationmuseum.org/img/pages/1703-DinoDen-TwoCard.jpg"
     },
@@ -219,7 +219,7 @@ const pets = [
         id: 28,
       name: "Nala",
       color: "Purple",
-      specialSkill: "Dances when he has to.",
+      specialSkill: "Dances when he has to. He never has to dance.",
       type: "cat",
       imageUrl: "https://tailandfur.com/wp-content/uploads/2016/03/40-Scary-and-Funny-Cat-Pictures-8.jpg"
     },
@@ -282,18 +282,15 @@ const pets = [
     let domString = "";
     for (const pet of array) {
       domString += `<div class="card" style="width: 18rem;">
-      <h5 class="card-title">${pet.name}</h5>
-        <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
-        <div class="card-body1">
-          <p class="card-text1">${pet.color}</p>
-        </div>
-        <div class="card-body2">
-          <p class="card-text2">${pet.specialSkill}</p>
-        </div>
-        <div class="card-body3">
-          <p class="card-text3">${pet.type}</p>
-        </div>
-      </div>`;
+    <h5 class="card-title">${pet.name}</h5>
+    <img src="${pet.imageUrl}" class="img-thumbnail" alt="...">
+    <h6 class="card-body1">${pet.color}</h6>
+    <div class="card-body2">
+      <p>${pet.specialSkill}</p>
+    </div>
+    <div class="card-footer" dataType="${pet.type}">${pet.type}</div>
+    <button class="btn btn-danger" id="delete--${pet.id}">Delete</button>
+  </div>`;
     }
   
     renderToDom("#app", domString);
@@ -320,6 +317,53 @@ const pets = [
   
   // 1. Get all the cards to render on the DOM
   cardsOnDom(pets);
+
+  const form = document.querySelector("form");
+
+  const createPet = (e) => {
+    e.preventDefault();
+    const newPetObj = {
+      id: pets.length + 1,
+      name: document.querySelector("#name").value,
+      imageUrl: document.querySelector("#image").value,
+      color: document.querySelector("#favoriteColor").value,
+      specialSkill: document.querySelector("#specialSkill").value,
+      type: document.querySelector("#petType").value,
+    }
+    pets.push(newPetObj);
+    cardsOnDom(pets);
+    form.reset();
+  }
+
+  form.addEventListener('submit', createPet);
+  
+  const app = document.querySelector('#app');
+  
+  app.addEventListener('click', (e) => {
+    if (e.target.id.includes('delete')) {
+      const [, id] = e.target.id.split('--');
+      const index = pets.findIndex((e) => e.id === Number(id));
+      pets.splice(index, 1);
+      cardsOnDom(pets);  
+    }
+  });
+ 
+ 
+  // const applyFooterStyles = () => {
+  //   const cardFooters = document.querySelectorAll('.card-footer');
+  
+  //   cardFooters.forEach((footer) => {
+  //     const petType = footer.getAttribute('dataType');
+      
+  //     if (petType === 'cat') {
+  //       footer.style.backgroundColor = 'lightblue';
+  //     } else if (petType === 'dog') {
+  //       footer.style.backgroundColor = 'green';
+  //     } else if (petType === 'dino') {
+  //       footer.style.backgroundColor = 'orange';
+  //     }
+  //   });
+  // };
   
   
   // 1. Target the buttons on the DOM
@@ -349,3 +393,22 @@ const pets = [
     cardsOnDom(dinoPets);
   });
   
+  // const catPetsColor = filter(pets, "cat") 
+  //   let domString2 = "";
+  //   if (pets.type === "cat") {
+  //     // domString2 += ``
+  //     document.querySelector("#cardBody3").style.backgroundColor = "lightblue" ;
+  //     // document.getElementById("card-body3").style.backgroundColor = "lightblue";
+  //   }
+  //   // renderToDom("#color", domString2);
+  
+  
+  
+  // function cPetsColor() {
+  //   if (pets.type === "cat") {
+  //     document.getElementById("type").style.backgroundColor = "lightblue";
+  //   // document.querySelector("#cardBody3").style.backgroundColor = "lightblue" ;
+  //   }
+  // }
+
+  // cPetsColor();
