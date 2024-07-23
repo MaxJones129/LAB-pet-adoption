@@ -99,7 +99,7 @@ const pets = [
       id: 13,
       name: "Chester",
       color: "Red",
-      specialSkill: "Expertly quotes and recognizes dialogue from early seasons of The Simpsons.",
+      specialSkill: "Expertly quotes dialogue from early seasons of The Simpsons.",
       type: "dog",
       imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKZwGiq1_kbstnb4UkU_yQcScpL5cgx6pfbA&s"
     },
@@ -131,7 +131,7 @@ const pets = [
      id: 17,
       name: "Muffin",
       color: "Yellow",
-      specialSkill: "Does not freak out if you haven’t seen his favorite movie (The Big Lebowski).",
+      specialSkill: "Freaks out if you haven’t seen his favorite movie (The Big Lebowski).",
       type: "cat",
       imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB3rBDfVpYqUcp0tvqbjuTrCeWLwBkcS0PUg&s"
     },
@@ -241,9 +241,161 @@ const pets = [
     }
   ];
 
-  // const targetingApp = document.querySelector("#app");
 
-  // let domString = "";
+
+  // Sets renderToDom, which is needed to render the array in the first place.
+  const renderToDom = (divId, htmlToRender) => {
+    const selectedDiv = document.querySelector(divId);
+    selectedDiv.innerHTML = htmlToRender;
+  };
+  
+  // Gets the cards on the DOM and sets cardOnDom for many future uses.
+  const cardsOnDom = (array) => {
+    let domString = "";
+    for (const pet of array) {
+
+      // Changes footer name of card depending on pet.type string.
+      const petFooter =
+      pet.type === "cat" ? "catFooter" :
+      pet.type === "dog" ? "dogFooter" :
+      pet.type === "dino" ? "dinoFooter" :
+      "";
+
+      domString += `<div class="card" style="width: 18rem;">
+    <h5 class="card-title">${pet.name}</h5>
+    <img src="${pet.imageUrl}" class="img-thumbnail" alt="...">
+    <h6 class="card-body1">${pet.color}</h6>
+    <div class="card-body2">
+      <p>${pet.specialSkill}</p>
+    </div>
+    <div class="card-footer ${petFooter}" id="footer" dataType="${pet.type}">${pet.type}</div>
+    <button class="btn btn-danger" id="delete--${pet.id}">Delete</button>
+  </div>`;
+    }
+  
+    renderToDom("#app", domString);
+  };
+  
+  // Sets filter for filter pet buttons at bottom of page.
+  const filter = (array, typeString) => {
+    const petArray = [];
+  
+    // array.forEach((item) => {
+    //   if (item.type === typeString) {
+    //     petArray.push(item);
+    //   }
+    // });
+  
+    for (const pet of array) {
+      if (pet.type === typeString) {
+        petArray.push(pet);
+      }
+    }
+  
+    return petArray;
+  };
+  
+  // Get all the cards to render on the DOM.
+  cardsOnDom(pets);
+
+  const form = document.querySelector("form");
+
+  // Creates New Pet
+  const createPet = (e) => {
+
+    // Needed for every form.
+    e.preventDefault();
+
+    const newPetObj = {
+      id: pets.length + 1,
+      name: document.querySelector("#name").value,
+      imageUrl: document.querySelector("#image").value,
+      color: document.querySelector("#favoriteColor").value,
+      specialSkill: document.querySelector("#specialSkill").value,
+      type: document.querySelector("#petType").value,
+    }
+    pets.push(newPetObj);
+    cardsOnDom(pets);
+
+    // Must have when changing form on-site.
+    form.reset();
+  }
+
+  // Adds function to the create pet button.
+  form.addEventListener('submit', createPet);
+  
+  const app = document.querySelector('#app');
+  
+  app.addEventListener('click', (e) => {
+    if (e.target.id.includes('delete')) {
+      const [, id] = e.target.id.split('--');
+      const index = pets.findIndex((e) => e.id === Number(id));
+      pets.splice(index, 1);
+      cardsOnDom(pets);  
+    }
+  });
+  
+  // Target the filter pet buttons on the DOM.
+  const showCatsButton = document.querySelector("#cat");
+  const showDogsButton = document.querySelector("#dog");
+  const showDinosButton = document.querySelector("#dino");
+  const showAllButton = document.querySelector("#resetbtn");
+  
+  // Adds all pets button to show all "pets" in the array.
+  showAllButton.addEventListener("click", () => {
+    cardsOnDom(pets);
+  });
+  
+  // Adds funtion to "cats" button to filter only cats on the array.
+  showCatsButton.addEventListener("click", () => {
+    const catPets = filter(pets, "cat");
+    cardsOnDom(catPets);
+  });
+  
+  // Adds funtion to "dinos" button to filter only dinos on the array.
+  showDogsButton.addEventListener("click", () => {
+    const dogPets = filter(pets, "dog");
+    cardsOnDom(dogPets);
+  });
+
+  // Adds funtion to "dinos" button to filter only dinos on the array.
+  showDinosButton.addEventListener("click", () => {
+    const dinoPets = filter(pets, "dino");
+    cardsOnDom(dinoPets);
+  });
+  
+
+
+  
+
+  // Some past used code, and testing code for footer color change.
+
+
+  // const catPetsColor = filter(pets, "cat") 
+  //   let domString2 = "";
+  //   if (pets.type === "cat") {
+  //     // domString2 += ``
+  //     document.querySelector("#cardBody3").style.backgroundColor = "lightblue" ;
+  //     // document.getElementById("card-body3").style.backgroundColor = "lightblue";
+  //   }
+  //   // renderToDom("#color", domString2);
+  
+  
+  
+  // function cPetsColor() {
+  //   if (pets.type === "cat") {
+  //     document.getElementById("type").style.backgroundColor = "lightblue";
+  //   // document.querySelector("#cardBody3").style.backgroundColor = "lightblue" ;
+  //   }
+  // }
+
+  // cPetsColor();
+
+    // const targetingApp = document.querySelector("#app");
+
+  
+  
+    // let domString = "";
   // for (const pet of pets) {
   //   domString += `<div class="card" style="width: 18rem;">
   //     <h5 class="card-title">${pet.name}</h5>
@@ -272,83 +424,7 @@ const pets = [
 
   // catType();
 
-  const renderToDom = (divId, htmlToRender) => {
-    const selectedDiv = document.querySelector(divId);
-    selectedDiv.innerHTML = htmlToRender;
-  };
-  
-  // get the cards on the DOM
-  const cardsOnDom = (array) => {
-    let domString = "";
-    for (const pet of array) {
-      domString += `<div class="card" style="width: 18rem;">
-    <h5 class="card-title">${pet.name}</h5>
-    <img src="${pet.imageUrl}" class="img-thumbnail" alt="...">
-    <h6 class="card-body1">${pet.color}</h6>
-    <div class="card-body2">
-      <p>${pet.specialSkill}</p>
-    </div>
-    <div class="card-footer" dataType="${pet.type}">${pet.type}</div>
-    <button class="btn btn-danger" id="delete--${pet.id}">Delete</button>
-  </div>`;
-    }
-  
-    renderToDom("#app", domString);
-  };
-  
-  // function to filter teammates with specific favorite color
-  const filter = (array, typeString) => {
-    const petArray = [];
-  
-    // array.forEach((item) => {
-    //   if (item.type === typeString) {
-    //     petArray.push(item);
-    //   }
-    // });
-  
-    for (const pet of array) {
-      if (pet.type === typeString) {
-        petArray.push(pet);
-      }
-    }
-  
-    return petArray;
-  };
-  
-  // 1. Get all the cards to render on the DOM
-  cardsOnDom(pets);
 
-  const form = document.querySelector("form");
-
-  const createPet = (e) => {
-    e.preventDefault();
-    const newPetObj = {
-      id: pets.length + 1,
-      name: document.querySelector("#name").value,
-      imageUrl: document.querySelector("#image").value,
-      color: document.querySelector("#favoriteColor").value,
-      specialSkill: document.querySelector("#specialSkill").value,
-      type: document.querySelector("#petType").value,
-    }
-    pets.push(newPetObj);
-    cardsOnDom(pets);
-    form.reset();
-  }
-
-  form.addEventListener('submit', createPet);
-  
-  const app = document.querySelector('#app');
-  
-  app.addEventListener('click', (e) => {
-    if (e.target.id.includes('delete')) {
-      const [, id] = e.target.id.split('--');
-      const index = pets.findIndex((e) => e.id === Number(id));
-      pets.splice(index, 1);
-      cardsOnDom(pets);  
-    }
-  });
- 
- 
   // const applyFooterStyles = () => {
   //   const cardFooters = document.querySelectorAll('.card-footer');
   
@@ -364,51 +440,3 @@ const pets = [
   //     }
   //   });
   // };
-  
-  
-  // 1. Target the buttons on the DOM
-  const showCatsButton = document.querySelector("#cat");
-  const showDogsButton = document.querySelector("#dog");
-  const showDinosButton = document.querySelector("#dino");
-  const showAllButton = document.querySelector("#resetbtn");
-  
-  // 2. Add click event to show all the instuctors on button click using the function we created above
-  showAllButton.addEventListener("click", () => {
-    cardsOnDom(pets);
-  });
-  
-  // 3. Add click event to filter all the instructors whose favorite color is blue on button click
-  showCatsButton.addEventListener("click", () => {
-    const catPets = filter(pets, "cat");
-    cardsOnDom(catPets);
-  });
-  
-  showDogsButton.addEventListener("click", () => {
-    const dogPets = filter(pets, "dog");
-    cardsOnDom(dogPets);
-  });
-
-  showDinosButton.addEventListener("click", () => {
-    const dinoPets = filter(pets, "dino");
-    cardsOnDom(dinoPets);
-  });
-  
-  // const catPetsColor = filter(pets, "cat") 
-  //   let domString2 = "";
-  //   if (pets.type === "cat") {
-  //     // domString2 += ``
-  //     document.querySelector("#cardBody3").style.backgroundColor = "lightblue" ;
-  //     // document.getElementById("card-body3").style.backgroundColor = "lightblue";
-  //   }
-  //   // renderToDom("#color", domString2);
-  
-  
-  
-  // function cPetsColor() {
-  //   if (pets.type === "cat") {
-  //     document.getElementById("type").style.backgroundColor = "lightblue";
-  //   // document.querySelector("#cardBody3").style.backgroundColor = "lightblue" ;
-  //   }
-  // }
-
-  // cPetsColor();
