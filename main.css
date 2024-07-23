@@ -1,23 +1,7 @@
-/* .body {
-  background-color: lightgrey !important;
-} */
 .card {
   display: flex;
   text-align: center;
 }
-/* .card {
-  display: flex;
-  text-align: center;
-} */
-
-/* #app {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  row-gap: 50px;
-  column-gap: 20px;
-} */
-
 
 #app {
   display: flex;
@@ -27,7 +11,7 @@
   padding-left: 400px;
   padding-right: 400px;
   padding-top: 50px;
-  row-gap: 50px;
+  row-gap: 100px;
   column-gap: 20px;
 }
 
@@ -37,25 +21,20 @@
   justify-content: center;
 }
 
-/* .card-text {
-  display: flex;
-  justify-content: center;
-}  */
-
 .card-body1 {
   display: flex;
   justify-content: center;
-  /* align-content: end; */
   padding-bottom: 25px;
 } 
 
 .card-body2 {
   display: flex;
   justify-content: center;
-  /* align-content: end; */
+  align-content: center;
   padding-bottom: 25px;
   padding-left: 10px;
   padding-right: 10px;
+  height: 125px;
 } 
 
 .card-footer {
@@ -108,3 +87,43 @@ form {
 /* #form-submit {
   padding-top: 50px;
 } */
+
+.headerText {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: xx-large;
+  background-image: "https://media.istockphoto.com/id/1131381748/photo/youngogs-and-cats-above-grey-banner.jpg?s=612x612&w=0&k=20&c=_7edWsLzR0VejyDLdvdVLuUlz_n42rgXO7GPcnCV16E=";
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.catFooter {
+  background-color: lightblue;
+}
+
+.dogFooter {
+  background-color: rgb(5, 192, 5);
+}
+
+.dinoFooter {
+  background-color: orange;
+}
+
+/* .card {
+  display: flex;
+  text-align: center;
+} */
+
+/* #app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 50px;
+  column-gap: 20px;
+} */
+
+/* .card-text {
+  display: flex;
+  justify-content: center;
+}  */
