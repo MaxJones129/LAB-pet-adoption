@@ -254,58 +254,64 @@ const pets = [
     let domString = "";
     for (const pet of array) {
 
-      // Changes footer name of card depending on pet.type string.
+      // Changes footer class of card depending on pet.type string.
       const petFooter =
+      // ? tests if first part of statement is true, if so then changes footer class to new id.
       pet.type === "cat" ? "catFooter" :
       pet.type === "dog" ? "dogFooter" :
       pet.type === "dino" ? "dinoFooter" :
       "";
 
-      domString += `<div class="card" style="width: 18rem;">
-    <h5 class="card-title">${pet.name}</h5>
-    <img src="${pet.imageUrl}" class="img-thumbnail" alt="...">
-    <h6 class="card-body1">${pet.color}</h6>
-    <div class="card-body2">
-      <p>${pet.specialSkill}</p>
-    </div>
-    <div class="card-footer ${petFooter}" id="footer" dataType="${pet.type}">${pet.type}</div>
-    <button class="btn btn-danger" id="delete--${pet.id}">Delete</button>
-  </div>`;
+      // Adds to domString varible.
+      domString += 
+        `<div class="card" style="width: 18rem;">
+          <h5 class="card-title">${pet.name}</h5>
+          <img src="${pet.imageUrl}" class="img-thumbnail" alt="...">
+          <h6 class="card-body1">${pet.color}</h6>
+          <div class="card-body2">
+            <p>${pet.specialSkill}</p>
+          </div>
+          <div class="card-footer ${petFooter}" id="footer" dataType="${pet.type}">${pet.type}</div>
+        <button class="btn btn-danger" id="delete--${pet.id}">Delete</button>
+        </div>`;
     }
   
+    // Renders cards in the first place by adding domString to html inside of #app div.
     renderToDom("#app", domString);
   };
   
   // Sets filter for filter pet buttons at bottom of page.
   const filter = (array, typeString) => {
+
+    // Creates new array with conditions that the filter follows.
     const petArray = [];
   
-    // array.forEach((item) => {
-    //   if (item.type === typeString) {
-    //     petArray.push(item);
-    //   }
-    // });
-  
+    // Sets functionality for the filter.
     for (const pet of array) {
+      // Tests for if pet.type === to conditioned typeString.
       if (pet.type === typeString) {
+        // Pushes specified pets to petArray.
         petArray.push(pet);
       }
     }
   
+    // Utility to finalzie petArray, here for if needed anywhere else ,must have this at the bottom of all filters.
     return petArray;
   };
   
   // Get all the cards to render on the DOM.
   cardsOnDom(pets);
 
+  // Sets variable form and assigns it to the entire form of html.
   const form = document.querySelector("form");
 
-  // Creates New Pet
+  // Creates new pet varialbe and creates an event inside.
   const createPet = (e) => {
 
     // Needed for every form.
     e.preventDefault();
 
+    // Declares what will be part of created pet.
     const newPetObj = {
       id: pets.length + 1,
       name: document.querySelector("#name").value,
@@ -314,28 +320,40 @@ const pets = [
       specialSkill: document.querySelector("#specialSkill").value,
       type: document.querySelector("#petType").value,
     }
+
+    // Pushes created pet to "new" array.
     pets.push(newPetObj);
+
+    // Pushes "new" array to DOM.
     cardsOnDom(pets);
 
     // Must have when changing form on-site.
     form.reset();
   }
 
-  // Adds function to the create pet button.
+  // Adds functionality to the create pet button.
   form.addEventListener('submit', createPet);
   
+  // Creates app variable and assigns it to #app div. ??
   const app = document.querySelector('#app');
   
+  // When delete button is clicked, and (e), the event, occurs, this code runs.
   app.addEventListener('click', (e) => {
+    // Tests for if targeted delete button has delete in the domString, (all cards should).
     if (e.target.id.includes('delete')) {
+      // , is needed to be the starting position, id is your end poistion.
+      // split("--") = calls on your -- in the domString to target where the event occurs.
       const [, id] = e.target.id.split('--');
+      // Assigning clicked button index. || Taking string and converting to number.
       const index = pets.findIndex((e) => e.id === Number(id));
+      // Deletes index of card selected. || , 1 = how many items in array you want to splice.
       pets.splice(index, 1);
+      // Reapplys cards with "new" array to DOM. 
       cardsOnDom(pets);  
     }
   });
   
-  // Target the filter pet buttons on the DOM.
+  // Creates variable that targets the filter pet buttons on the DOM.
   const showCatsButton = document.querySelector("#cat");
   const showDogsButton = document.querySelector("#dog");
   const showDinosButton = document.querySelector("#dino");
@@ -348,7 +366,9 @@ const pets = [
   
   // Adds funtion to "cats" button to filter only cats on the array.
   showCatsButton.addEventListener("click", () => {
+    // Creates array that contains filtered pets with typeString === to "cat".
     const catPets = filter(pets, "cat");
+    // Displays new filtered array on the DOM.
     cardsOnDom(catPets);
   });
   
