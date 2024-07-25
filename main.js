@@ -266,7 +266,7 @@ const pets = [
       domString += 
         `<div class="card" style="width: 18rem;">
           <h5 class="card-title">${pet.name}</h5>
-          <img src="${pet.imageUrl}" class="img-thumbnail" alt="...">
+          <img src="${pet.imageUrl}" class="img-thumbnail" id = "imgMain" alt="...">
           <h6 class="card-body1">${pet.color}</h6>
           <div class="card-body2">
             <p>${pet.specialSkill}</p>
@@ -295,7 +295,7 @@ const pets = [
       }
     }
   
-    // Utility to finalzie petArray, here for if needed anywhere else ,must have this at the bottom of all filters.
+    // Utility to finalzie petArray, here for if needed anywhere else, must have this at the bottom of all filters.
     return petArray;
   };
   
